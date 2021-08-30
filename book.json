@@ -1,0 +1,12 @@
+{
+        "plugins": [
+                "folding-chapters-2",
+                "theme-code",
+                "-sharing"
+        ],
+        "pluginsConfig": {
+                "theme-default": {
+                        "showLevel": false
+                }
+        }
+}
