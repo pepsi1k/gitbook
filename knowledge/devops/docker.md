@@ -30,3 +30,21 @@ docker build -t IMAGE_NAME PATH_TO_DOCKERFILE 	# build image
 docker-compose build
 docker-compose up
 ```
+
+## While true container
+
+```yaml
+version: '3'
+
+services:
+  hello-log:
+    container_name: hello-log
+    image: ubuntu
+    command: |
+      /bin/bash -c "
+      while true; do
+        echo "hello"
+        sleep 3s
+      done
+      "
+```
