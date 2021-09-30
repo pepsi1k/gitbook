@@ -32,7 +32,7 @@ docker-compose up
 ```
 
 ## cloudWatch logging driver
-https://github.com/Pepsi1k?tab=repositories
+https://docs.docker.com/config/containers/logging/awslogs/
 
 https://wdullaer.com/blog/2016/02/28/pass-credentials-to-the-awslogs-docker-logging-driver-on-ubuntu/
 
