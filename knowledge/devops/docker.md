@@ -31,11 +31,11 @@ docker-compose build
 docker-compose up
 ```
 
-## While true container
+## cloudWatch logging driver
+https://github.com/Pepsi1k?tab=repositories
+https://wdullaer.com/blog/2016/02/28/pass-credentials-to-the-awslogs-docker-logging-driver-on-ubuntu/
 
 ```yaml
-version: '3'
-
 services:
   hello-log:
     container_name: hello-log
@@ -47,4 +47,10 @@ services:
         sleep 3s
       done
       "
+    logging:
+      driver: awslogs
+      options:
+        awslogs-region: eu-central-1
+        awslogs-group: hello-log
+        awslogs-create-group: 'true'
 ```
